@@ -1,0 +1,305 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* Déclaration de la police */
+@font-face {
+font-family: "test";
+src: url('DailyHours-Regular.ttf');
+}
+
+@font-face {
+font-family: "test";
+font-weight: bold;
+src: url('DailyHours-Bold.ttf');
+}
+
+/* =========================== */
+
+/* FOOTER CSS */
+
+/* =========================== */
+	.footer_box{
+	  text-align: center;
+	  bottom: 0; 
+	  left: 0; 
+	  right: 0;
+	  padding-left: 15%;
+	  padding-right: 15%;
+	  
+	}
+	.footer_link {
+	  color: rgb(0, 0, 0);
+	  font-size: 20px;
+	  
+	}
+	.footer_link:hover{
+	  background-color: #d0ff00;
+	  color: #b2b3b4;
+	  text-decoration: none;
+	}
+	.footer_box p{
+	  color: white;
+	}
+
+/* =========================== */
+
+/* SECTION COMMINGSOON CSS */
+
+/* =========================== */
+	.section_1{
+	  background-image: url(../img/cs_bg.jpg);
+	  height:100%;
+	  width: auto;
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+
+/* CONTENUSITE + SLIDER CSS */
+	.section_2{
+	  background-color: rgba(255, 154, 169, 0.705);
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  
+	}
+
+
+	.logo_ts {
+	  /*background-color:rgb(235, 0, 0);
+	  height: 40%;
+	  width: 50%;*/
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	}
+
+	.letters{
+	  font-size: 70px;
+	}
+	.ml4 {
+	  font-weight: 900;
+	  font-size: 3.5em;
+	}
+	.ml4 .letter {
+	  display: inline-block;
+	  line-height: 1em;
+	}
+	/* =========================== */
+
+/* FORMULAIRE CSS */
+
+/* =========================== */
+  /* SECTION_3 CSS */
+    .section_3{
+      background-image: url(../img/form_bg.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+	  height:auto;
+		width: auto;
+		font-family: 'Hachi Maru Pop', cursive;
+		
+    }
+	.formt{
+		margin-left:10%; 
+		margin-right:10%; 
+		
+		/* border:2px solid red; */
+		background-color: rgba(18, 0, 83, 0.753);
+	}
+	.formbox{
+		position: fixed;
+	}
+	
+	/* BOUTTON CSS */
+    .btn{
+      width: 250px;
+      margin: 0;
+      padding: 0;
+    }
+    #btnInscription{
+      background-color: rgb(233, 89, 209);
+      font-weight: bold;
+      font-size: 20px;
+      /* border-radius: 80% / 40%; */
+      margin-top: 5px;
+    }
+    #btnInscription:hover{
+      background-color: rgb(0, 255, 76);
+    }
+    #btnAPI{
+      background-color: rgb(255, 255, 255);
+      color:rgb(0, 0, 0);
+      /* width: 400px; */
+      /* height: 20px;   */
+      text-align: center;
+    }
+    #btnAPI:hover{
+      background-color: rgb(0, 255, 76);
+    }
+  /* LABEL CSS */
+    .labelAPI{
+      font-size:15px;
+      
+    }
+    .labelForm{
+      color:rgb(255, 255, 255);
+      font-size: 15px;;
+	  
+      
+    }
+    /* CHECKBOX CSS */
+    #checkboxMajeur{
+      /* margin-left: 5px; */
+    }
+	
+	
+	
+/* =========================== */
+
+/* FOOTER */
+
+/* =========================== */
+	.section_4{
+	  height:100%;
+	  width: auto;
+	  background-image: url(../img/footer_bg.jpg);
+	  /* background-attachment: fixed; */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  bottom: 0; 
+	font-family: 'Hachi Maru Pop', cursive;
+	}
+	
+	.footer, .footer_copyright{
+	text-align: center;
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 13% ;
+	}
+
+
+
+
+	@keyframes float {
+		0% {
+			box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+			transform: translatey(0px);
+		}
+		50% {
+			box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+			transform: translatey(-20px);
+		}
+		100% {
+			box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+			transform: translatey(0px);
+		}
+	}
+	
+
+	
+	.icon1 {
+		width: 80px;
+		height: 80px;
+		/* box-sizing: border-box; */
+		/* border: 5px pink solid; */
+		border-radius: 10%;
+		overflow: hidden;
+		box-shadow: 0 5px 15px 0px rgba(255, 0, 0, 0.6);
+		transform: translatey(0px) ;
+		animation: float 2s ease-in infinite;
+		position: fixed;
+		margin-left: 3%;
+		margin-top: 15%;
+		
+		
+	}
+	.icon1:hover{
+		transform: translatey(10px) scale(2); 
+		background-color: rgb(255, 0, 0);
+		motion-rotation: 50px;
+		animation: float 1s ease-in infinite;
+	}
+	.icon2 {
+		width: 80px;
+		height: 80px;
+		box-sizing: border-box;
+		/* border: 5px pink solid; */
+		border-radius: 10%;
+		overflow: hidden;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+		animation: float 2s ease-in-out infinite;
+		position: fixed;
+		margin-left: 93%;
+		margin-top: 15%;
+		
+	}
+	.icon3 {
+		width: 80px;
+		height: 80px;
+		box-sizing: border-box;
+		/* border: 5px pink solid; */
+		border-radius: 10%;
+		overflow: hidden;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+		animation: float 2s ease-in-out infinite;
+		position: fixed;
+		margin-left: 93%;
+		margin-top: 15%;
+		
+	}
+	.icon4 {
+		width: 80px;
+		height: 80px;
+		box-sizing: border-box;
+		/* border: 5px pink solid; */
+		border-radius: 10%;
+		overflow: hidden;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+		animation: float 2s ease-in-out infinite;
+		position: fixed;
+		margin-left: 93%;
+		margin-top: 35%;
+		
+	}
+	.icon5 {
+		width: 80px;
+		height: 80px;
+		box-sizing: border-box;
+		/* border: 5px pink solid; */
+		border-radius: 10%;
+		overflow: hidden;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+		animation: float 2s ease-in-out infinite;
+		position: fixed;
+		margin-left: 2%;
+		margin-top: 35%;
+		
+	}
+	img { width: 100%; height: auto; }
+	
+	
+	.container1{
+		width: 100%;
+		padding-right: 10%;
+		padding-left: 10%;
+		background-color: #000000b9;
+	}
+	
+	
+	
+	
